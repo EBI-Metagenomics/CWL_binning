@@ -3,7 +3,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 
 
-label: "metaWrap binning tool"
+label: "metaWrap bin refinement"
 
 #requirements:
 #  DockerRequirement:
