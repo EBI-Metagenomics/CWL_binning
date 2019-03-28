@@ -5,13 +5,11 @@ class: CommandLineTool
 
 label: "metaWrap binning tool"
 
-requirements:
-  DockerRequirement:
-#    dockerPull: "quay.io/biocontainers/metawrap:1.1--0"
-    dockerPull: "metawrap_w_checkm:latest"
-  InlineJavascriptRequirement: {}
-  InitialWorkDirRequirement:
-    listing: $(inputs.first_bin_dir.listing)
+#requirements:
+#  DockerRequirement:
+#    dockerPull: "metawrap_w_checkm:latest"
+#  InlineJavascriptRequirement: {}
+#    listing: [$(inputs.concoct_bin_dir.location), $(inputs.metabat_bin_dir.location), $(inputs.maxbin_bin_dir.location)]
 
 
 baseCommand: ['metawrap', 'bin_refinement', '--quick']
@@ -25,15 +23,15 @@ arguments:
     prefix: -t
 
 inputs:
-  first_bin_dir:
+  concoct_bin_dir:
     type: Directory?
     inputBinding:
       prefix: "-A"
-  sec_bin_dir:
+  metabat_bin_dir:
     type: Directory?
     inputBinding:
       prefix: "-B"
-  third_bin_dir:
+  maxbin_bin_dir:
     type: Directory?
     inputBinding:
       prefix: "-C"
@@ -50,14 +48,10 @@ inputs:
 
 
 outputs:
-#  bins:
-#    type: File[]
-#    outputBinding:
-#      glob: $("metabat2_bins/*.*.fa")
-  output:
-    type: Directory
+  bins:
+    type: File[]
     outputBinding:
-      glob: new_outdir
+      glob: $("*/*.*.fa")
 
 $namespaces:
  edam: http://edamontology.org/

@@ -32,50 +32,50 @@ stdout: stdout.txt
 stderr: stderr.txt
 
 outputs:
-  coords1:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.1coords')
-  delta1:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.1delta')
-  delta:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.delta')
-  mcoords:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.mcoords')
-  mdelta:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.mdelta')
-  qdiff:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.qdiff')
-  rdiff:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.rdiff')
   report:
     type: File
     outputBinding:
       glob: $(inputs.query.nameroot + '.report')
-  snps:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.snps')
-  unqry:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.unqry')
-  unref:
-    type: File
-    outputBinding:
-      glob: $(inputs.query.nameroot + '.unref')
+#  coords1:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.1coords')
+#  delta1:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.1delta')
+#  delta:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.delta')
+#  mcoords:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.mcoords')
+#  mdelta:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.mdelta')
+#  qdiff:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.qdiff')
+#  rdiff:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.rdiff')
+#  snps:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.snps')
+#  unqry:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.unqry')
+#  unref:
+#    type: File
+#    outputBinding:
+#      glob: $(inputs.query.nameroot + '.unref')
 
 $namespaces:
  iana: https://www.iana.org/assignments/media-types/

@@ -6,8 +6,8 @@ class: CommandLineTool
 label: "metaWrap binning tool"
 
 requirements:
-  DockerRequirement:
-    dockerPull: "quay.io/biocontainers/metawrap:1.1--0"
+#  DockerRequirement:
+#    dockerPull: "quay.io/biocontainers/metawrap:1.1--0"
   InlineJavascriptRequirement: {}
   InitialWorkDirRequirement:
     listing: $(inputs.reads)
