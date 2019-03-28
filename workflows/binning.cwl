@@ -14,8 +14,8 @@ inputs:
     type: File
   reads:
     type: File[]
-  reference_fastas:
-    type: File[]
+#  reference_fastas:
+#    type: File[]
 
 outputs:
   concoct_bins:
