@@ -57,7 +57,7 @@ steps:
       genomes: drep/genomes
     out:
       - output_folder
-    run: ../tools/gtdb.cwl
+    run: ../tools/gtdbtk.cwl
 
 $namespaces:
  edam: http://edamontology.org/

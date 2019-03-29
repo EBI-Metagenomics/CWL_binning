@@ -2,7 +2,7 @@
 cwlVersion: v1.0
 class: CommandLineTool
 
-label: "mash_diff: Fast sequence distance estimator that uses MinHash"
+label: "GTDBtk"
 
 requirements:
   DockerRequirement:
