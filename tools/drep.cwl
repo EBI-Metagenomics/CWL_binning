@@ -2,7 +2,7 @@
 cwlVersion: v1.0
 class: CommandLineTool
 
-label: "mash_diff: Fast sequence distance estimator that uses MinHash"
+label: "dRep"
 
 requirements:
   DockerRequirement:
@@ -21,7 +21,6 @@ inputs:
     type: File[]
     inputBinding:
       prefix: -g
-
   ani_threshold:
     type: float?
     default: 0.9
@@ -62,7 +61,7 @@ stdout: stdout.txt
 stderr: stderr.txt
 
 outputs:
-  files:
+  genomes:
     type: Directory
     outputBinding:
       glob: work_dir
