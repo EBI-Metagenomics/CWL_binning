@@ -1,0 +1,55 @@
+# cwltest
+
+- job: tests/tools/metawrap_binning/metawrap_binning.yaml
+  tool: tools/metawrap_binning.cwl
+  output:
+    concoct_bins:
+      basename: concoct_bins
+      class: Directory
+      listing:
+      - class: File
+        basename: bin.1.fa
+        checksum: sha1$c1a43949adaae37229c618856bf23d455d4ab4d1
+        size: 18382
+      - class: File
+        basename: bin.0.fa
+        checksum: sha1$20870c38d429959a05753534de93ff6b31fe5e82
+        size: 18169
+      - class: File
+        basename: bin.4.fa
+        checksum: sha1$532826e7700995da4d9388a14c0568ce11d77039
+        size: 18913
+      - class: File
+        basename: bin.3.fa
+        checksum: sha1$3f9cdd2a533dcd782663a2f37ccafb54665b4c45
+        size: 968751
+      - class: File
+        basename: unbinned.fa
+        checksum: sha1$14e436ef05378c639fa3421bbd514b032a9bd67c
+        size: 60162
+      - class: File
+        basename: bin.2.fa
+        size: 18326
+    maxbin2_bins:
+      basename: maxbin2_bins
+      class: Directory
+      listing:
+      - class: File
+        basename: bin.1.fa
+        checksum: sha1$260d06b35b68abb0989102080d03865aeb02363e
+        size: 593912
+      - class: File
+        basename: bin.0.fa
+        checksum: sha1$47cd343d627ac5427cbff58bd608c377fa8553ba
+        size: 506212
+    metabat2_bins:
+      basename: metabat2_bins
+      class: Directory
+      listing:
+      - class: File
+        basename: bin.1.fa
+        checksum: sha1$a8ce53125cc1183d58c9f3aaa7869666b8725e19
+        size: 1045482
+      - class: File
+        basename: bin.unbinned.fa
+        size: 57221
