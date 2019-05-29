@@ -1,0 +1,16 @@
+contigs:
+  class: File
+  path: ./ERR973084.fasta
+
+reads:
+  - class: File
+    path: ./ERR973084_1.fastq
+  - class: File
+    path: ./ERR973084_2.fastq
+
+cwltool:overrides:
+  ../workflows/binning.cwl:
+    requirements:
+      ResourceRequirement:
+        ramMin: 7000
+        coresMin: 2

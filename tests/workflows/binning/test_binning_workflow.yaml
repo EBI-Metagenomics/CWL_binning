@@ -1,0 +1,278 @@
+# cwltest
+
+- job: tests/workflows/binning/binning.yaml
+  tool: workflows/binning.cwl
+  output:
+    raw_concoct_bins:
+      basename: concoct_bins
+      class: Directory
+      listing:
+      - checksum: sha1$2cc699deada19df048a31e10c533e6638599125a
+        basename: bin.55.fa
+        class: File
+        size: 1352
+      - checksum: sha1$916d5e51da7763055e6323d18c7a66be0c657d31
+        basename: bin.57.fa
+        class: File
+        size: 3161
+      - checksum: sha1$1671a3c98049e6762c13e6695829b394c5431494
+        basename: bin.20.fa
+        class: File
+        size: 1145
+      - checksum: sha1$969c12cb9e0e2a79400b8073ba7c6fe02a98b266
+        basename: bin.52.fa
+        class: File
+        size: 1997
+      - checksum: sha1$550c755e5121f33437a184334587178fbcf84578
+        basename: bin.18.fa
+        class: File
+        size: 1984
+      - checksum: sha1$b1fecdffc2cf4d02de491a3b0ac801b24ed0d897
+        basename: bin.21.fa
+        class: File
+        size: 1671
+      - checksum: sha1$de0950670bc72c5d41ac44d0375f8322eeb29ca4
+        basename: bin.10.fa
+        class: File
+        size: 1542
+      - checksum: sha1$3cc1660d246e6928175a0e608d36ef3511e4d5b4
+        basename: bin.29.fa
+        class: File
+        size: 3867
+      - checksum: sha1$6a74478c44946354a387ed5e7af57f2399b878fd
+        basename: bin.45.fa
+        class: File
+        size: 1541
+      - checksum: sha1$8fd86853bcd45556ca6b537bf734f2b0b1acae0a
+        basename: bin.44.fa
+        class: File
+        size: 2806
+      - checksum: sha1$b9db8c129958d574038fc8be1aa21da0dc8c75c7
+        basename: bin.15.fa
+        class: File
+        size: 1950
+      - checksum: sha1$5d96a332e608d45a7b386efc715e7ca61c1defa1
+        basename: bin.37.fa
+        class: File
+        size: 1685
+      - checksum: sha1$79ad30a9e8a036150d4f44a209271b181ae25289
+        basename: unbinned.fa
+        class: File
+        size: 35724
+      - checksum: sha1$9a51389496133a4ac15e74c49cb8c16d3082c7b8
+        basename: bin.53.fa
+        class: File
+        size: 2044
+      - checksum: sha1$df814d62fbd95b18e29f2e5f954dd99f96cf4f67
+        basename: bin.28.fa
+        class: File
+        size: 1841
+      - checksum: sha1$60333cece50d74a0776700b6f636fe951dabc8a2
+        basename: bin.35.fa
+        class: File
+        size: 3610
+      - checksum: sha1$22baa0e15151b281b728c4b1c5a6e8e1ac561dab
+        basename: bin.12.fa
+        class: File
+        size: 3152
+      - checksum: sha1$992774a079fa3d10c74a30e632cf175e2b7ddcd4
+        basename: bin.3.fa
+        class: File
+        size: 1143
+      - checksum: sha1$e12a7640f710c9bbdbd4d4ff51c15cd4968947c1
+        basename: bin.25.fa
+        class: File
+        size: 1686
+      - checksum: sha1$770b1729528126ba93db06fec27db32ffd41cd3a
+        basename: bin.56.fa
+        class: File
+        size: 2893
+      - checksum: sha1$1a2fea5b3e9d44c1d4f1528a03f3ce2add62e0ab
+        basename: bin.49.fa
+        class: File
+        size: 1603
+      - checksum: sha1$ef78ff0a4568f9ebdb7355a0a9f1e6102f93fb42
+        basename: bin.9.fa
+        class: File
+        size: 1119
+      - checksum: sha1$143a6f68bdd740b08f10daf3cf80fa7f8bd0743d
+        basename: bin.54.fa
+        class: File
+        size: 2321
+      - checksum: sha1$2ede2e6985e8547f2a9bb5525466b4b9dce5f585
+        basename: bin.8.fa
+        class: File
+        size: 1181
+      - checksum: sha1$7940110e9368774c2f76df279726c2bb6aa7ff43
+        basename: bin.14.fa
+        class: File
+        size: 5159
+      - checksum: sha1$7346febb3c7ffced5d98b6da3e31d89fdefacfd9
+        basename: bin.42.fa
+        class: File
+        size: 3623
+      - checksum: sha1$18e3da9f36ec20c30107b12e638f6098e24c70cf
+        basename: bin.13.fa
+        class: File
+        size: 2898
+      - checksum: sha1$47d98f25747f7149cc219be3651d9b6589be4bfc
+        basename: bin.51.fa
+        class: File
+        size: 1606
+      - checksum: sha1$2892bf12656ab9d3a075734e634737aeb318a282
+        basename: bin.24.fa
+        class: File
+        size: 2114333
+      - checksum: sha1$d1e9714813397f26b78925179e389b5ee2283fb2
+        basename: bin.27.fa
+        class: File
+        size: 2527
+      - checksum: sha1$b7a00bdcc1388f36bb8d9a01c37d73e7fc342667
+        basename: bin.46.fa
+        class: File
+        size: 3188
+      - checksum: sha1$b5de1ab110a5bdf095d93aba2f87194460154063
+        basename: bin.38.fa
+        class: File
+        size: 8993
+      - checksum: sha1$773fd2b8a6651c89bad654a97107fe8ac972840b
+        basename: bin.11.fa
+        class: File
+        size: 6082
+      - checksum: sha1$dac548da7c599f734efa8718cc04db6d3649d61b
+        basename: bin.22.fa
+        class: File
+        size: 1400
+      - checksum: sha1$5e9a4624e654de1b0c4175da3435bca22d444cc3
+        basename: bin.4.fa
+        class: File
+        size: 5678
+      - checksum: sha1$70a5aac7010bb00e41760cc0fac55cdd80540bf7
+        basename: bin.43.fa
+        class: File
+        size: 3139
+      - checksum: sha1$c981877bb1f56fa9db7b6017d85c2c880084c464
+        basename: bin.36.fa
+        class: File
+        size: 1271
+      - checksum: sha1$e922b1623a3a6bb939d5891c36541475f4e3c979
+        basename: bin.16.fa
+        class: File
+        size: 2424
+      - checksum: sha1$d63b2c9004c65b445ff481435eade094434d01e3
+        basename: bin.41.fa
+        class: File
+        size: 5449
+      - checksum: sha1$cf7d8214935c790e09fec8f677042da696535c30
+        basename: bin.5.fa
+        class: File
+        size: 1831
+      - checksum: sha1$ee4ee3da172ebea331fca46d35934e716f70e8e7
+        basename: bin.50.fa
+        class: File
+        size: 1489
+      - checksum: sha1$c7967439cbd5d823666734495a0d624447d9e783
+        basename: bin.40.fa
+        class: File
+        size: 1808
+      - checksum: sha1$d20df0890905acff988384f9df4a3ee1981f468d
+        basename: bin.19.fa
+        class: File
+        size: 12442
+      - checksum: sha1$2dd121c21e4b390c2610ffded539a6eb50b92c0a
+        basename: bin.1.fa
+        class: File
+        size: 2570
+      - checksum: sha1$c0fb551fe15c93fb3f84681ae330ed72c2c9a7ec
+        basename: bin.30.fa
+        class: File
+        size: 3964
+      - checksum: sha1$5d4ebd66ddbe347f04ac118286d72152bc72eb8e
+        basename: bin.0.fa
+        class: File
+        size: 1629
+      - checksum: sha1$ae79c7011f6b1226d81c64f3e78ee496bea88ea4
+        basename: bin.39.fa
+        class: File
+        size: 1348
+      - checksum: sha1$ab2ac51d1cba1810224cf66145018b6f1c789133
+        basename: bin.23.fa
+        class: File
+        size: 2612
+      - checksum: sha1$238a3a513c9ab1f8c6a040e87c16df6e1bcc0cd1
+        basename: bin.7.fa
+        class: File
+        size: 2508
+      - checksum: sha1$94828bed420d34eaf8e196a4fe119f67fdc461de
+        basename: bin.47.fa
+        class: File
+        size: 1322
+      - checksum: sha1$9085b1b76bc8c83623cf28a9553d9237804e4fdb
+        basename: bin.33.fa
+        class: File
+        size: 2256
+      - checksum: sha1$e26e539ab1ca8dd4ef0797026b8cd5bdf1690576
+        basename: bin.6.fa
+        class: File
+        size: 2330
+      - checksum: sha1$777ff5d323e69af67d848aaa8e66d558d7ccad3e
+        basename: bin.32.fa
+        class: File
+        size: 2945
+      - checksum: sha1$dd403e7aa605b64836257d595be5ed5c7aa539cb
+        basename: bin.17.fa
+        class: File
+        size: 3699
+      - checksum: sha1$76734d41e050e5bf6d5f9f48c807714b5902bc26
+        basename: bin.34.fa
+        class: File
+        size: 3512
+      - checksum: sha1$1c2f54bb961eadf239ced57cb5e51348610503ec
+        basename: bin.58.fa
+        class: File
+        size: 3504
+      - checksum: sha1$b9054cf428b1dc02e5ba6aab555d9509a8e38d01
+        basename: bin.2.fa
+        class: File
+        size: 2488
+      - checksum: sha1$54130b717a4657bbc6382466cdaa7601baa30c25
+        basename: bin.48.fa
+        class: File
+        size: 2944
+      - checksum: sha1$4d113c2de1c470dd9ece8f6f5f07f079965745bd
+        basename: bin.26.fa
+        class: File
+        size: 1371
+      - checksum: sha1$2f47b7b6b68ab5f13be216abe6f773fcdcbf630d
+        basename: bin.31.fa
+        class: File
+        size: 6241
+    raw_maxbin2_bins:
+      basename: maxbin2_bins
+      class: Directory
+      listing:
+      - checksum: sha1$535d25d7bafa63b0748d07f409d8ffc9a63a9ba2
+        basename: bin.1.fa
+        class: File
+        size: 1146346
+      - checksum: sha1$0211e43cda2155b577f0d5965c3b688a3bc276aa
+        basename: bin.0.fa
+        class: File
+        size: 1128217
+    raw_metabat2_bins:
+      basename: metabat2_bins
+      class: Directory
+      listing:
+      - checksum: sha1$6c6b041d37f95dc50f0652d046d0d5db87160f22
+        basename: bin.1.fa
+        class: File
+        size: 2185883
+      - checksum: sha1$7f5be02d0f8c06891e41812e10f11e44bdd61e94
+        basename: bin.unbinned.fa
+        class: File
+        size: 93994
+    refined_bins:
+    - checksum: sha1$6c6b041d37f95dc50f0652d046d0d5db87160f22
+      basename: bin.1.fa
+      class: File
+      size: 2185883

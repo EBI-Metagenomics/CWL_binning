@@ -3,7 +3,6 @@ cwlVersion: v1.0
 
 requirements:
   MultipleInputFeatureRequirement: {}
-  MultipleInputFeatureRequirement: {}
 
 inputs:
   contigs:
@@ -15,6 +14,15 @@ outputs:
   refined_bins:
     type: File[]
     outputSource: bin_refinement/bins
+  raw_concoct_bins:
+    type: Directory?
+    outputSource: metawrap_binning/concoct_bins
+  raw_metabat2_bins:
+    type: Directory?
+    outputSource: metawrap_binning/metabat2_bins
+  raw_maxbin2_bins:
+    type: Directory?
+    outputSource: metawrap_binning/maxbin2_bins
 
 steps:
   metawrap_binning:

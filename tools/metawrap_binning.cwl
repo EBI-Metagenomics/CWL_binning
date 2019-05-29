@@ -12,7 +12,7 @@ requirements:
   ResourceRequirement:
     coresMin: 4
   DockerRequirement:
-    dockerPull: "quay.io/biocontainers/metawrap:1.1--0"
+    dockerPull: "quay.io/biocontainers/metawrap:1.2--0"
 
 baseCommand: [ 'metawrap', 'binning', '--concoct', '--metabat2', '--maxbin2']
 

@@ -10,3 +10,4 @@ install:
 
 script:
   - cwltest --test tests/tools/metawrap_binning/test_binning.yml
+  - cwltest --timeout 36000 --verbose --test tests/workflows/binning/test_binning_workflow.yaml

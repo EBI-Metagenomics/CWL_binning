@@ -5,17 +5,20 @@ class: CommandLineTool
 
 label: "metaWrap bin refinement"
 
-#requirements:
-#  DockerRequirement:
-#    dockerPull: "metawrap_w_checkm:latest"
-#  InlineJavascriptRequirement: {}
+requirements:
+  InlineJavascriptRequirement: {}
+
+hints:
+  DockerRequirement:
+    dockerPull: "mgnify/metawrap_w_checkm_database"
+#  InitialWorkDirRequirement:
 #    listing: [$(inputs.concoct_bin_dir.location), $(inputs.metabat_bin_dir.location), $(inputs.maxbin_bin_dir.location)]
 
 
 baseCommand: ['metawrap', 'bin_refinement', '--quick']
 
 arguments:
-  - valueFrom: new_outdir
+  - valueFrom: 'out_dir'
     prefix: -o
   - valueFrom: $(runtime.ram)
     prefix: -m
@@ -51,7 +54,15 @@ outputs:
   bins:
     type: File[]
     outputBinding:
-      glob: $("*/*.*.fa")
+      glob: $('out_dir/metawrap*/*.fa')
+  stats:
+    type: File
+    outputBinding:
+      glob: $('out_dir/metawrap*.stats')
+  contigs:
+    type: File
+    outputBinding:
+      glob: $('out_dir/metawrap*.contigs')
 
 $namespaces:
  edam: http://edamontology.org/
