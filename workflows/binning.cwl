@@ -3,7 +3,9 @@ cwlVersion: v1.0
 
 requirements:
   MultipleInputFeatureRequirement: {}
-
+  StepInputExpressionRequirement: {}
+  InlineJavascriptRequirement: {}
+  
 inputs:
   contigs:
     type: File
@@ -29,6 +31,8 @@ steps:
     in:
       contigs: contigs
       reads: reads
+      single_end:
+        valueFrom: $(inputs.reads.length == 1)
     out:
       - concoct_bins
       - metabat2_bins

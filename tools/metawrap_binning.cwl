@@ -41,9 +41,10 @@ inputs:
     type: boolean?
     inputBinding:
       prefix: "--run-checkm"
-
-
-
+  single_end:
+    type: boolean?
+    inputBinding:
+      prefix: '--single-end'
 
 outputs:
   concoct_bins:
