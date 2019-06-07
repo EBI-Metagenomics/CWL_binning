@@ -9,10 +9,12 @@ requirements:
   InlineJavascriptRequirement: {}
   InitialWorkDirRequirement:
     listing: $(inputs.reads)
-  ResourceRequirement:
-    coresMin: 4
+
+hints:
   DockerRequirement:
     dockerPull: "quay.io/biocontainers/metawrap:1.2--0"
+  ResourceRequirement:
+    coresMin: 4
 
 baseCommand: [ 'metawrap', 'binning', '--concoct', '--metabat2', '--maxbin2']
 
