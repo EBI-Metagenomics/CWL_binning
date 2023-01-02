@@ -3,7 +3,6 @@ cwlVersion: v1.0
 
 requirements:
   MultipleInputFeatureRequirement: {}
-  MultipleInputFeatureRequirement: {}
 
 inputs:
   contigs:
